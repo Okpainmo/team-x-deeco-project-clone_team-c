@@ -18,16 +18,34 @@ body{
 
 @media screen and (max-width: 768px) {
   /* ==========product section======== */
-  .product-section .product-title{
-    padding: 0.6rem;
+  .product-section .product-container .product-title{
+    padding: 0.4rem;
 }
-.product-container{
+.product-section .product-container{
     max-width: 90%;
+    border: 2px solid red;
 }
-.product-contents .product-card{
+.product_section-wrapper  .product-contents .product-card{
     width: 100%;
-    padding:1.5rem 1rem;
+    padding: 1.5rem 1rem;
+    border: 2px solid red;
 }
+
+.product_section-wrapper .proceed-to-cart-button{
+  margin: 2rem 0;
+  width: 100%;
+}
+.product_section-wrapper .proceed-to-cart-button a{
+  font-size: 1.2rem;
+  width: 80% ;
+  padding: 0.6rem 0.8rem;
+}
+/* .product-section .product-title{
+  border: 2px solid blue !important;
+}
+.product-title .product_title-content{
+  width: 90% !important;
+} */
 
 
 /* ================her0 404 =============== */
@@ -48,5 +66,39 @@ body{
     line-height: 1;
     padding-top: 5px;
     text-align: center;
+  }
+
+  /* ===============Admin page ================== */
+  .withdraw-wrapper .withdraw_wallet-card{
+    width: 90%;
+    height: 40%;
+  }
+  .withdraw_wallet-card h1{
+    font-size: 1.3rem;
+  }
+  
+  .withdraw_wallet-card a{
+    margin-top: 1rem;
+    font-size: 14px;
+    background-color: rgb(112, 191, 86);
+    border-radius: 5px;
+    width: 80%;
+    padding: 0.6rem 2rem;
+  }
+
+
+  /* ==================== Footer  ==================== */
+  .footer_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer_wrapper .footer_column{
+    width: 100% !important;
+    padding: 0 0.5rem;
+    /* border: 2px solid blue; */
+  }
+  .footer_wrapper .footer_column_b{
+    width: 45% !important;
+    /* border: 2px solid blue; */
   }
 }
